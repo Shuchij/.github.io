@@ -1,0 +1,75 @@
+
+html {
+  overflow-y: hidden;
+}
+
+nav {
+    display: block;
+    background-color: #eeeeee;
+    font-size: 24px;
+    padding-bottom:3%;
+    width: 100%;
+  }
+
+.more_vert {
+  display: inline-block;
+  text-align: right;
+  background-color: #FF8C22;
+  color: #FFFFFF;
+  padding-left: 35%;
+  }
+
+.navigationmenu {
+  display: inline-block;
+  color: #FFFFFF;
+  padding-left: 4%;
+  padding-top: 2%;
+  }
+
+.statusBar {
+  display:flex;
+  text-align: right;
+  width: 100%;
+  background-color: #F08246;
+  color: #FFFFFF;
+  padding-left: 63%;
+  }
+
+  .time{
+    font-size: 1em;
+    padding-top: 3%;
+    }
+
+.appTitle {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  color: #FFFFFF;
+  padding-left: 30%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+body {
+  font-size: 1em;
+  font-family: Montserrat;
+  margin: 0 auto;
+  width: 375px;
+  background-color: grey;
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+  .footer{
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 1%;
+    background-color: black;
+  }
+
+  .footer-background{
+    padding-bottom: 1%;
+  }
