@@ -3,37 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Portfolio | Shuchi Joshi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <title>Portfolio | Shuchi Joshi</title>
   </head>
 
-      <header>
-            <body>
-              <body style="background-color:#eeeeee; font-family: Monteserrat, Arial, Helvetica, sans-serif;">
+  <body>
 
-    <nav class="navbar">
-      <img src="Images\Group 10.400px.png" alt="SJ Logo" style="max-width:100%;height:auto;">
-      <a href="#projects" class="w3-button w3-bar-item">Work</a>
-      <a href="#home" class="w3-button w3-bar-item">Home</a>
-      <a href="#about" class="w3-button w3-bar-item">About</a>
-      <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-    </nav>
-</header>
+  <div class="topnav">
 
-  <article class= "w3-containerintro" style="max-width:600px">
-        <h2>CloudDocs</h2>
-        <h3>Creating and storing documents made easy!</h3>
-            <h4><b>Research | Brand | Prototype</b></h4>
+        <ul class="navlist">
+              <li> <img src="Images\Group 10.400px.png" alt="SJ Logo" style="max-width:100%;height:auto;"> </li>
+              <li>  <a href="#projects" class="work-button">Work</a> </li>
+              <li>  <a href="#home" class="home-button">Home</a> </li>
+              <li>  <a href="#about" class="about-button">About</a> </li>
+              <li>  <a href="#contact" class="contact-button">Contact</a> </li>
+        </ul>
+  </div>
+
+  <article class= "w3-containerintro">
+          <h2>CloudDocs</h2>
+              <h3>Creating and storing documents made easy!</h3>
+                <h4><b>Research | Brand | Prototype</b></h4>
 </article>
 
 <!--Problem - Solution -->
-                <div style="background-color:#AC405D; padding:10px;">
-                  <center><button type="ViewPrototye"><b>View Prototype</b></button></center></div>
-<article class = "problemsolution" style="max-width:600px">
+                <div class="section-divider">
+                      <button class="button-middle">View Prototype</button></div>
+<article class = "problemsolution">
             <h2>Problem</h2>
                 <p>Create a clould storage solution that meets the needs of students and working pofessionals and encourages
                    intercative collaboration.</p>
@@ -44,13 +44,12 @@
                 <div style="background-color:#AC405D;color:white;padding:20px;"></div>
 
 
-<!--Case Study Intro -->
-<article class="w3-containerCS" style="max-width:650px">
-                <div style="background-color:#00004F;color:white;padding:30px;">
-                <img src="images/CloudDocs App main img.png" alt="CloudDocs App" width="600" height="500">
+<!--Case Study Intro with case study tools-->
+<article class="casestudy-container-fluid">
+                    <img class="clouddocs-mainapp-image" <img src="images/CloudDocs App main img.png" alt="CloudDocs App" width="600" height="500">
 
 <!-- Case study tools -->
-                      <div style="background-color:#524AAC;color:white;padding:40px;">
+                      <div style="background-color:#524AAC;color:white;padding:40px;"></div>
 
    <section class= "Casestudytools" style="max-width:300px" >
                           <h3 style="color:white;">Roles</h3>
@@ -84,10 +83,8 @@
 </article>
                           <div style="background-color:#AC405D; padding:20px;"></div>
 
-<article>
-  <section class="w3-container w3-padding-64 w3-content">
+<article class="R&Dcontainer" style="max-width:650px">
         <h2>RESEARCH &amp DISCOVERY</h2>
-
 <!-- Case study tools -->
                 <div style="background-color:#524AAC;color:white;padding:10px;vertical-align: inherit;">
   <section>
@@ -97,17 +94,17 @@
   </section>
 
 <!-- User Survey-keyfindings -->
-<article class="w3-container w3-padding-64 w3-content">
+<article class="UScontainer"style="max-width:650px">
               <img src="images/keyfindings_survey.png" alt="User Survey Key Findings" width="327" height="614">
               <div style="background-color:#524AAC;color:white; padding:10px;">
                 <h3 style="color:white;">Key Findings</h3>
                     <p>100% of respondents use cloud storage.</p>
                     <p>The top 3 applications used are:</p>
-                      <ul>
-                        <li>Google Drive 100%</li>
-                        <li>Dropbox 73.3%</li>
-                        <li>and Pinterest 46.7%</li>
-                      </ul>
+                        <ul>
+                          <li>Google Drive 100%</li>
+                          <li>Dropbox 73.3%</li>
+                          <li>and Pinterest 46.7%</li>
+                        </ul>
                     <p>The number one pain point with current cloud storage application are that it is hard to find and organize files, folders
                        and photos.</p>
                     <p>80% are interested in a cloud storage application for document collaboration.</p></div>
@@ -119,13 +116,13 @@
 
   <!-- Competitive Analysis -->
 <article class = "w3-container w3-padding-64 w3-content" style="max-width:600px">
-        <h3>Competitive Analysis</h3>
-          <p>A SWOT table analysis was performed on Google Drive, Dropbox, and Mega.</p>
-            <img src="images/GoogleDrive.png" alt="GoogleDrive Logo" width="134" height="109">
-          <p>Google Drive does storage and collaboration well but lacks in organization and has no social media collaboration.</p>
-            <img src="images/Dropbox.png" alt="Dropbox Logo" width="134" height="109">
-          <p>Dropbox has good share files features but a low data limit for the free account make it a no-go for super users.</p>
-            <img src="images/Mega.png" alt="Mega Logo" width="134" height="109">
+                <h3>Competitive Analysis</h3>
+                    <p>A SWOT table analysis was performed on Google Drive, Dropbox, and Mega.</p>
+                      <img src="images/GoogleDrive.png" alt="GoogleDrive Logo" width="134" height="109">
+                    <p>Google Drive does storage and collaboration well but lacks in organization and has no social media collaboration.</p>
+                      <img src="images/Dropbox.png" alt="Dropbox Logo" width="134" height="109">
+                    <p>Dropbox has good share files features but a low data limit for the free account make it a no-go for super users.</p>
+                      <img src="images/Mega.png" alt="Mega Logo" width="134" height="109">
           <p>Mega has good file-sharing features designed to improve content control,  but falls short in sharing options, and browser compatibility.</p>
   </article>
                 <div style="background-color:#AC405D; color:white;padding:10px;">
@@ -255,70 +252,63 @@
   <section class="w3-container w3-padding-64 w3-content" style="max-width:600px">
           <h2>Actionable Prototypes</h2>
 
-              <div style="background-color:#00004F;color:white;padding:30px;">
+              <div style="background-color:#00004F;color:white;padding:20px;">
               <p>The usability review for the High-Fidelity Mockups came with few surprises and not too many changes. The three users felt very
                 satisfied with the color choice, typeface and icons. There was no problem mentioned by the users as far as the flow of the various
                 tasks in the app is concerned and they were able to perform the actionable tasks.</p>
-               <center><img src="images/Dashboard-Add Menu.png" alt="Cloud Docs - Dashboard Add Menu" width="220" height="418"><br></br>
+               <img src="images/Dashboard-Add Menu.png" alt="Cloud Docs - Dashboard Add Menu" width="220" height="418"><br></br>
                <img src="images/Cloud Docs -changeyourplan 2.png" alt="Cloud Docs - Change Your Plan" width="220" height="418"><br></br>
                <img src="images/Dashboard-Grid View.png" alt="Cloud Docs - Dashboard-Grid View" width="220" height="418"><br></br>
                <img src="images/Dashboard-Select Add New Link 1.png" alt="Cloud Docs - Dashboard-Add New Link" width="220" height="418"><br></br>
-               <img src="images/Add Photos - 1.png" alt="Cloud Docs - Add Photos Screen" width="220" height="418"></center></div>
+               <img src="images/Add Photos - 1.png" alt="Cloud Docs - Add Photos Screen" width="220" height="418"></div>
       </section>
   </article>
               <div style="background-color:#AC405D;color:white;padding:20px;">
               <center><button type="button"><b>View Hi-Fi Mockups</b></button></center></div>
 
-<article>
-  <section class="w3-container w3-padding-64 w3-content" style="max-width:600px">
+<article class="w3-container w3-padding-64 w3-content" style="max-width:600px">
         <h2>Finishing Touches</h2>
-
-            <ul style="list-style-type:disc;">
-              <li>Updated the Change your plan screen and adjusted the display boxes so that info can be displayed in one screen.</li>
-              <li>Updated the profile settings option from checkbox to radio button.</li>
-              <li>Provided a Verify & Pay options right after choosing a plan to lead users to the Upgrade screens.</li>
-              <li>Streamlined the upload process for folder and images.</li>
-              <li>Redesigned pages and updated the add a link process.</li>
-            </ul>
-                <center><img src="images/Cloud Docs -changeyourplan 2.1.png" alt="Cloud Docs -Change Your Plan screen" width="200" height="700"><br></br>
-                <img src="images/Profile Settings - Upgrade.png" alt="Cloud Docs Profile Settings - Upgrade" width="200" height="400"><br></br>
-                <img src="images/Cloud Docs -Verify & Pay.png" alt="Cloud Docs Verify & Pay" width="200" height="400"></center>
-  </section>
+              <ul>
+                <li>Updated the Change your plan screen and adjusted the display boxes so that info can be displayed in one screen.</li>
+                <li>Updated the profile settings option from checkbox to radio button.</li>
+                <li>Provided a Verify & Pay options right after choosing a plan to lead users to the Upgrade screens.</li>
+                <li>Streamlined the upload process for folder and images.</li>
+                <li>Redesigned pages and updated the add a link process.</li>
+              </ul>
+                  <img src="images/Cloud Docs -changeyourplan 2.1.png" alt="Cloud Docs -Change Your Plan screen" width="200" height="700">
+                  <img src="images/Profile Settings - Upgrade.png" alt="Cloud Docs Profile Settings - Upgrade" width="200" height="400">
+                  <img src="images/Cloud Docs -Verify & Pay.png" alt="Cloud Docs Verify & Pay" width="200" height="400">
 </article>
             <div style="background-color:#AC405D;color:white;padding:20px;"></div>
 
-<article>
-  <section class="w3-container w3-padding-64 w3-content" style="max-width:600px">
-        <h2>CONCLUSION</h2>
-
-            <div style="background-color:#00004F;color:white;padding:30px;">
-            <p>CloudDocs in its current state is a minimally viable product. If the project continues, the following will be implemented:</p>
-            <ul style="list-style-type:disc;">
-              <li>Additional upload space for photos and other media files.</li>
-              <li> Adding more document types for storage.</li>
-              <li>Direct access to better document editing software within the app.</li>
-            </ul>
-                <center><img src="images/upload.png" alt="Cloud Docs -Change Your Plan screen" width="500" height="500"></center>
-
-            <p><b>There were two key revelations that I had during this project:</b>
+<article class="w3-container w3-padding-64 w3-content" style="max-width:600px">
+          <h2>CONCLUSION</h2>
+                  <div style="background-color:#00004F;color:white;padding:20px;">
+              <p>CloudDocs in its current state is a minimally viable product. If the project continues, the following will be implemented:</p>
+                <ul>
+                  <li>Additional upload space for photos and other media files.</li>
+                  <li>Adding more document types for storage.</li>
+                  <li>Direct access to better document editing software within the app.</li>
+                </ul>
+                    <img src="images/upload.png" alt="Cloud Docs -Change Your Plan screen" width="500" height="500">
+              <p><b>There were two key revelations that I had during this project:</b>
               <p>First, minimalism is harder to appropriately apply than I initially
-              thought, and thoughtful design is key. There is a danger when you are overly familiar with a product that you created to assume user knowledge,
-              which can lead to confusion.</p>
-              <p> The second is to seek feedback constantly and aggressively. Testing each process, each flow, each design decision, will help build
-                  the backbone of a great product.</p></div>
-  </section>
+                 thought, and thoughtful design is key. There is a danger when you are overly familiar with a product that you created to assume user knowledge,
+                 which can lead to confusion.</p>
+              <p>The second is to seek feedback constantly and aggressively. Testing each process, each flow, each design decision, will help build
+                 the backbone of a great product.</p></div>
 </article>
 </body>
 </body>
 <!-- Footer -->
-                <div style="background-color: #E1708A;color: #0B1C31;padding: 40px;">
-<footer class="w3-container w3-center w3-xlarge">
-    <button type="button"><b>Connect</b></button>
+              <div style="background-color: #E1708A;color: #0B1C31;padding: 40px;">
+<footer class="container-fluid">
+        <button type="button"><b>Connect</b></button>
     <a href="#"><i class="fa fa-facebook-official"></i></a>
     <a href="#"><i class="fa fa-pinterest-p"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <p style="color: #00000A">Copyright 2019 Shuchi Joshi</p>
+          <p style="color:#00000A">Copyright 2019 Shuchi Joshi</p>
 </footer></div>
 </html>
