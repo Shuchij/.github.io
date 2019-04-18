@@ -6,53 +6,48 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>Portfolio | Shuchi Joshi</title>
   </head>
 
-  <body>
-
-  <div class="topnav">
-
+    <body>
         <ul class="navlist">
-              <li> <img src="Images\Group 10.400px.png" alt="SJ Logo" style="max-width:100%;height:auto;"> </li>
-              <li>  <a href="#projects" class="work-button">Work</a> </li>
-              <li>  <a href="#home" class="home-button">Home</a> </li>
-              <li>  <a href="#about" class="about-button">About</a> </li>
-              <li>  <a href="#contact" class="contact-button">Contact</a> </li>
-        </ul>
-  </div>
+            <li> <img src="Images\Group 10.400px.png" alt="SJ Logo"> </li>
+            <li>  <a href="#projects" class="navbutton">Work</a> </li>
+            <li>  <a href="#home" class="navbutton">Home</a> </li>
+            <li>  <a href="#about" class="navbutton">About</a> </li>
+            <li>  <a href="#contact" class="navbutton">Contact</a> </li>
+      </ul>
 
-  <article class= "container-intro">
+<!--projects page introduction -->
+  <article class= "intro-container-fluid">
           <h2>CloudDocs</h2>
-              <h3>Creating and storing documents made easy!</h3>
-                <h4><b>Research | Brand | Prototype</b></h4>
+              <p>Creating and storing documents made easy!</p>
+                <h4>Research | Brand | Prototype</h4>
 </article>
 
+<div align="center">
 <!--Problem - Solution -->
                 <div class="section-divider">
-                      <button class="button-middle">View Prototype</button></div>
+                      <button class="button-wrapper">View Prototype</button></div>
 <article class = "problemsolution">
             <h2>Problem</h2>
-                <p>Create a clould storage solution that meets the needs of students and working pofessionals and encourages
-                   intercative collaboration.</p>
+                <p>Create a clould storage solution that meets the needs of students and working pofessionals and encourages intercative collaboration.</p>
             <h2>Solution</h2>
                 <p>CloudDocs, a cloud storage appliction for working professionals that allows users to create, uplaod, organize and share.
                    CloudDocs also features social media networking to encourage more collaboration beyond the cloud network.</p>
   </article>
-                <div style="background-color:#AC405D;color:white;padding:20px;"></div>
-
+                <div class="section-divider"></div>
 
 <!--Case Study Intro with case study tools-->
-<article class="casestudy-container-fluid">
-                    <img class="clouddocs-mainapp-image" <img src="images/CloudDocs App main img.png" alt="CloudDocs App" width="600" height="500">
+<article class="cstools-box">
+                    <img class="clouddocs-mainapp-image" <img src="images/CloudDocs App main img.png" alt="CloudDocs App">
 
 <!-- Case study tools -->
-                      <div style="background-color:#524AAC;color:white;padding:40px;"></div>
-
-   <section class= "Casestudytools" style="max-width:300px" >
-                          <h3 class="roles-wrapper;">Roles</h3>
+                <div class="CS-tools-wrapper">
+                          <h3>Roles</h3>
                             <dl>
                               <dt>UX Design</dt>
                               <dt>User Research</dt>
@@ -60,7 +55,7 @@
                               <dt>Branding & Identity</dt>
                             </dl>
 
-                        <h3 class="tools-wrapper;">Tools</h3>
+                        <h3>Tools</h3>
                           <dl>
                             <dt>Figma</dt>
                             <dt>Invision</dt>
@@ -68,7 +63,7 @@
                             <dt>Usability Hub</dt>
                           </dl>
 
-                      <h3 class="deliverables-wrapper;">Deliverables</h3>
+                      <h3>Deliverables</h3>
                               <dl>
                                 <dt>User Surveys | Personas</dt>
                                 <dt>Competitive analysis</dt>
@@ -77,63 +72,62 @@
                                 <dt>Style Guide | Digital</dt>
                                 <dt>Prototype</dt>
                               </dl>
-
-                            </div>
-    </section>
+                  </div>
 </article>
-                          <div style="background-color:#AC405D; padding:20px;"></div>
+                          <div class="section-divider"></div>
 
-<article class="R&Dcontainer" style="max-width:650px">
-        <h2>RESEARCH &amp DISCOVERY</h2>
-<!-- Case study tools -->
-                <div style="background-color:#524AAC;color:white;padding:10px;vertical-align: inherit;">
-  <section>
-                <h3 style="color:white;">User Research</h3>
-                    <p>The user reserach first step was to survey and specifically shortlist the user experiences and expectations with
-                      current cloud storage applications, utilizing google forms.</p></div>
-  </section>
+<!-- Research & Discovery section -->
+                <h1>RESEARCH &amp DISCOVERY</h1>
+<article class="RandD-container-fluid">
+                      <h2>User Research</h2>
+                          <p>The user reserach first step was to survey and specifically shortlist the user experiences and expectations with current
+                             cloud storage applications, utilizing google forms.</p>
+</article>
 
 <!-- User Survey-keyfindings -->
-<article class="UScontainer"style="max-width:650px">
-              <img src="images/keyfindings_survey.png" alt="User Survey Key Findings" width="327" height="614">
-              <div style="background-color:#524AAC;color:white; padding:10px;">
-                <h3 style="color:white;">Key Findings</h3>
-                    <p>100% of respondents use cloud storage.</p>
-                    <p>The top 3 applications used are:</p>
-                        <ul>
-                          <li>Google Drive 100%</li>
-                          <li>Dropbox 73.3%</li>
-                          <li>and Pinterest 46.7%</li>
-                        </ul>
-                    <p>The number one pain point with current cloud storage application are that it is hard to find and organize files, folders
-                       and photos.</p>
-                    <p>80% are interested in a cloud storage application for document collaboration.</p></div>
-</article>
-                <div style="background-color: #AC405D;color:white;padding:10px;">
-                  <center><button type="button"><b>View User Survey</b></button></center>
-                </div>
+                    <img class="keyfindings-image" <img src="images/keyfindings_survey.png" alt="User Survey Key Findings"></img>
 
+<div class="keyfindings-container-fluid">
+                        <h2>Key Findings</h2>
+                            <p>100% of respondents use cloud storage.</p>
+                            <p>The top 3 applications used are:</p>
+                                  <ol>
+                                      <li>Google Drive 100%</li>
+                                      <li>Dropbox 73.3%</li>
+                                      <li>and Pinterest 46.7%</li>
+                                  </ol>
+                            <p>The number one pain point with current cloud storage application are that it is hard to find and organize files, folders
+                               and photos.</p>
+                            <p>80% are interested in a cloud storage application for document collaboration.</p></div>
+              <div class="section-divider">
+                    <button class="button-wrapper">View User Survey</button></div>
 
-  <!-- Competitive Analysis -->
-<article class = "w3-container w3-padding-64 w3-content" style="max-width:600px">
-                <h3>Competitive Analysis</h3>
-                    <p>A SWOT table analysis was performed on Google Drive, Dropbox, and Mega.</p>
-                      <img src="images/GoogleDrive.png" alt="GoogleDrive Logo" width="134" height="109">
+<!-- Competitive Analysis -->
+<article class = "competitiveanalysis">
+                <h2>Competitive Analysis</h2>
+                      <p>A SWOT table analysis was performed on Google Drive, Dropbox, and Mega.</p>
+
+                      <div class="column">
+                          <img class="g-d-m-logoimg" <img src="images/GoogleDrive.png" alt="GoogleDrive Logo" >
                     <p>Google Drive does storage and collaboration well but lacks in organization and has no social media collaboration.</p>
-                      <img src="images/Dropbox.png" alt="Dropbox Logo" width="134" height="109">
+                  </div>
+                  <div class="column">
+                          <img class="g-d-m-logoimg" <img src="images/Dropbox.png" alt="Dropbox Logo">
                     <p>Dropbox has good share files features but a low data limit for the free account make it a no-go for super users.</p>
-                      <img src="images/Mega.png" alt="Mega Logo" width="134" height="109">
-          <p>Mega has good file-sharing features designed to improve content control,  but falls short in sharing options, and browser compatibility.</p>
+                  </div>
+                  <div class="column">
+                            <img class="g-d-m-logoimg" <img src="images/Mega.png" alt="Mega Logo">
+                    <p>Mega has good file-sharing features designed to improve content control,  but falls short in sharing options, and browser
+                       compatibility.</p></div>
   </article>
-                <div style="background-color:#AC405D; color:white;padding:10px;">
-                <center><button type="button"><b>View SWOT Table</b></button></center>
-                </div>
+              <div class="section-divider">
+                          <button class="button-wrapper">View SWOT Table</button></div>
 
   <!-- Content Strategy -->
   <article class= "w3-container w3-padding-64 w3-content" style="max-width:600px">
-      <h3>Content Strategy</h3>
-          <p>Create a cloud storage application geared toward working professionals, that creates, stores and organize files. The app allows users
-            to engage and collaborate with their professional and personal network.</p>
+            <h3>Content Strategy</h3>
+                    <p>Create a cloud storage application geared toward working professionals, that creates, stores and organize files. The app allows
+                       users to engage and collaborate with their professional and personal network.</p>
               <img src="images/Strategy flow.png" alt="Strategy flow" width="531" height="456">
   </article>
                   <div style="background-color:#AC405D;color:white;padding:20px;"></div>
@@ -266,7 +260,7 @@
               <div style="background-color:#AC405D;color:white;padding:20px;">
               <center><button type="button"><b>View Hi-Fi Mockups</b></button></center></div>
 
-<article class="w3-container w3-padding-64 w3-content" style="max-width:600px">
+<article class="w3-container w3-padding-64 w3-content">
         <h2>Finishing Touches</h2>
               <ul>
                 <li>Updated the Change your plan screen and adjusted the display boxes so that info can be displayed in one screen.</li>
@@ -281,7 +275,7 @@
 </article>
             <div style="background-color:#AC405D;color:white;padding:20px;"></div>
 
-<article class="w3-container w3-padding-64 w3-content" style="max-width:600px">
+<article class="w3-container w3-padding-64 w3-content">
           <h2>CONCLUSION</h2>
                   <div style="background-color:#00004F;color:white;padding:20px;">
               <p>CloudDocs in its current state is a minimally viable product. If the project continues, the following will be implemented:</p>
@@ -298,17 +292,22 @@
               <p>The second is to seek feedback constantly and aggressively. Testing each process, each flow, each design decision, will help build
                  the backbone of a great product.</p></div>
 </article>
+        </div>
 </body>
-</body>
+
 <!-- Footer -->
-              <div style="background-color: #E1708A;color: #0B1C31;padding: 40px;">
-<footer class="container-fluid">
-        <button type="button"><b>Connect</b></button>
-    <a href="#"><i class="fa fa-facebook-official"></i></a>
-    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <p style="color:#00000A">Copyright 2019 Shuchi Joshi</p>
-</footer></div>
+<footer class="container-fluid-footer">
+
+        <div class="footer-social-icons">
+                    <button class="connect-button">Connect</button>
+                    <ul class="social-icons">
+                        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="" class="social-icon"> <i class="fa fa-pinterest-p"></i></a></li>
+                        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="" class="social-icon"> <i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class='copyright'>Copyright 2019 Shuchi Joshi</div>
+</footer>
 </html>

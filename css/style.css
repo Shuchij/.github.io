@@ -1,5 +1,6 @@
 
 @import url("https://use.fontawesome.com/37471687aa.js");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @import "normalize";
 
 *, *:before, *:after {
@@ -10,28 +11,114 @@
 
 html {
   font-size: 18px;
-  overflow-y: hidden;
-  overflow-x: hidden;
+
 }
 
+/* global styles */
+body {
+  display: inline-block;
+  align-content: center;
+  position: relative;
+  background-color: #eeeeee;
+  color:#00000A;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+h1 {
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  color: #0B1C31;
+  text-align: center;
+  padding-left: 20px;
+  line-height: 1.2;
+  line-height: 75%;
+  line-height: 2em;
+  line-height: normal;
+  }
+
+h2 {
+  display: flex;
+  text-align: center;
+  position: relative;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0B1C31;
+  padding-top: 20px;
+  padding-left: 40px;
+  line-height: 1.2; /* within paragraph */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3 {
+  display: flex;
+  text-align: left;
+  position: relative;
+  font-size: 24px;
+  line-height: 40px;
+  color: #0B1C31;
+  font-weight: 600;
+  padding-left: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h4 {
+    display: flex;
+
+    text-align: left;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #0B1C31;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+p {
+  display: block;
+  position: relative;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  padding: 2% 2% 2% 2%;
+  line-height: 1.5; /* within paragraph */
+  text-align: left;
+  font-weight: 300;
+  line-height: 20px;
+  font-weight: 400px;
+  margin-bottom: 20px; /* between paragraphs */
+}
+
+/*custom  styles */
 .navlist {
   list-style-type: none;
-  margin: 0;
+  width: 70%;
+  margin: auto;
   padding: 0;
-  text-align:center;
-}
+  }
 
 .navlist li {
-  display: inline;
+  display: inline;   /* Ensures that list items are in the same line. Else, they would be vertically aligned*/
 }
 
 .navlist a {
   color: #00000A;
-  display:inline-block;
+  display: relative;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font weight: 500; /* Montserrat Medium */
   line-height: 40px;
   margin: 5px 5px 5px 5px;
-  padding: 2% 5% 5% 2%;
+  padding: 5% 2% 2% 2%;
 }
 
 /*hero image properties*/
@@ -39,38 +126,42 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 40px;
+  width: 100%;
 }
 
 /*h1 heading style - homepage*/
-h1 span {
-    text-align: center;
-    position: absolute;
-    color: #FFFFFF;
-    font: 48px 'Montserrat', Helvetica, Arial, Sans-Serif;
-    font weight: 400;
-    letter-spacing: 1px;
-    top: 200px;
-    left: 0;
-    width: 100%;
-    padding: 20px;
+.heroimage-h1 {
+  display: block;
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
+  font: 48px 'Montserrat', Helvetica, Arial, Sans-Serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
   }
 
 /*<!-- Intro Description -->*/
 .intro-container-fluid {
-  display: grid;
+  display: block;
   position: relative;
+  align-content: center;
   font-size: 18px;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  text-align: left;
+  text-align: center;
   line-height: 30px;
   width: 70%;
   max-width: 600px;
-  padding: 5% 5% 5% 10%;
+  padding: 5% 5% 5% 5%;
   }
 
 /*<!--Case Study Intro -->*/
 .casestudy-container-fluid {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   text-align: left;
   background-color: #00004F;
@@ -83,7 +174,10 @@ h1 span {
 
 /*clouddocs-app image properties*/
 .clouddocs-app-image {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width:400px;
@@ -99,7 +193,7 @@ h1 span {
   width: 120px;
   height: 80px;
   padding left: 80%;
-  padding-bottom:40px;
+  padding-bottom: 40px;
 }
 
 /*clouddocs-intro properties*/
@@ -111,43 +205,281 @@ h1 span {
   line-height: 30px;
   margin: 0 auto;
   max-width: 600px;
-  font-weight: 400;
+  position: relative;
+  padding-bottom: 5%;
 }
 
 /*casestudy-button properties*/
 .casestudy-button {
-    display: flex;
-    font-size: 18px;
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    display: block;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     background-color: #ac405d;
     color: #FFFFFF;
     border-radius: 20px;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    text-decoration: bold;
+    font-weight: bold;
     position: relative;
   }
 
 /*let's connect properties*/
-.connect{
+.connect {
   color: #00004F;
-  display: block;
-  font-size: 18px;
+  display: inline-block;
+  font-size: 1.2em;
   line-height: 30px;
-  width: 70%;
+  width: 100%;
   max-width: 600px;
   padding: 5% 5% 5% 10%;
+  position: relative;
+}
+
+/*Projects page - introduction*/
+.intro {
+  display: flex;
+  position: relative;
+  text-align: left;
+  border-bottom: 1px;
+  font color: #00000A;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  height: 10rem;
+  padding: 5% 5% 5% 5%;
+}
+
+.clouddocs-mainapp-image {
+  display: block;
+  align-items: center;
+  position: relative;
+  margin-left: 0 auto;
+  width: 50%;
+  height: 600px;
+  padding: 20%, 5%, 20%, 5%;
+}
+
+/*Viewprototype button style*/
+.button-wrapper {
+  display: block;
+  font-size: 18px;
+  align-items: center;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background-color: #19227C;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 15%, 5%, 5%, 10%;
+  position: relative;
+  height: auto;
+  }
+
+.section-divider {
+  background-color:#AC405D;
+  position: relative;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+}
+
+.problemsolution {
+  display: block;
+  position: relative;
+  max-width: 600px;
+  text-align: left;
+  background-color:#E1708A;
+  font-weight: 400px;
+  color:#0B1C31;
+  padding-top: 2%, 0, 2%, 0;
+  flex: 0 0 200px;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.w3-containerCS {
+  display: flex;
+  position: relative;
+  font-size: 18px;
+	background-color: #00004F;
+  font color: white;
+  padding: 10%, 10%, 10%, 10%;
+  height: auto;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cstools-box {
+  display: block;
+  background-color: #00004F;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  flex: 0 0 400px;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CS tools list*/
+.CS-tools-wrapper{
+  display: inline-block;
+  background-color:#524AAC;
+  color: #FFFFFF;
+  max-width: 600px;
+  padding: 30%, 20%, 30%, 20%;
+  }
+
+.CS-tools-wrapper dl, li, h3 {
+    display: inline;
+    text-align: center;
+    padding: 10% 5% 10% 5%;
+    }
+
+/* researchdiscovery */
+.RandD h1{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+ .RandD-container-fluid {
+  display: block;
+  background-color:#524AAC;
+  color: #FFFFFF;
+  text-align: left;
+  max-width: 600px;
+  padding: 20%, 5%, 10%, 0%;
+  position: relative;
+  vertical-align: inherit;
+}
+
+.keyfindings-image {
+  display: flex;
+  align-items: center;
+
+  margin-left: 0 auto;
+  width: inherit;
+  height: 400px;
+  padding: 10%, 10%, 30%, 10%;
+}
+.keyfindings-container-fluid, ol {
+  display: inline-block;
+  background-color: #524AAC;
+  color: #FFFFFF;
+  text-align: left;
+  max-width: 600px;
+  padding: 10%, 20%, 10%, 10%;
+  position: relative;
+  width: 70%;
+  margin: auto;
+  vertical-align: inherit;
+  }
+
+/* Competitive Analysis*/
+.CA-container-fluid{
+  display: block;
+  align-items: center;
+  position: relative;
+}
+
+.g-d-m-logoimg {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 0 auto;
+  width: 134px;
+  height: 109px
+  padding: 10%, 5%, 10%, 5%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
-/* about-page list styles*/
+/*footer properties*/
+.container-fluid-footer {
+  display: block;
+  color: #00000A;
+  background-color:#E1708A;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  padding: 2% 2% 2% 2%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  }
 
+.copyright{
+   bottom: 0;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   margin: 30px 0 0;
+   position: relative;
+   line-height: 20px;
+   font-weight: 400px;
+}
+
+.connect-button {
+  display: flex;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #AC405D;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 0 auto;
+  width:100px;
+}
+
+.footer-social-icons {
+  margin-bottom: 5%;
+  position: relative;
+  font-size: 30px;
+  color: #00000A;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.container-fluid-footer .footer-social-icons .social-icons {
+  list-style-type: none;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  }
+
+.container-fluid-footer .footer-social-icons .social-icons li {
+    display: inline;   /* Ensures that list items are in the same line. Else, they would be vertically aligned*/
+    padding: 10px 5px;
+  }
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/*---- about-page list styles----*/
 .experiencelist-container {
   position: relative;
   grid-column: span 1;
   display: grid;
-  font size: 18px;
+  font size: 1em;
   grid: subgrid;
   text-align: left;
   line-height: 30px;
@@ -165,7 +497,7 @@ h1 span {
   position: relative;
   grid-column: span 1;
   display: grid;
-  font size: 18px;
+  font size: 1em;
   text-align: left;
   line-height: 30px;
   width: 30%;
@@ -182,7 +514,7 @@ h1 span {
   display: inline-grid;
   position: relative;
   grid-column: span 1;
-  font size: 18px;
+  font size: 1em;
   grid: subgrid;
   text-align: left;
   line-height: 30px;
@@ -201,271 +533,4 @@ h1 span {
   list-style-image: url("Images\icons8-javascript-48.png");
   list-style-image: url("Images\icons8-wordpress-48.png");
 
-  }
-
-dl{
-  display: grid;
-  grid-column: span 2;
-}
-
-ul {
-  display: inline;
-  grid: auto-flow / auto 1fr;
-}
-
-li {
-  grid-column: span 2;
-  display: grid;
-  font size: 16px;
-  grid: subgrid;
-}
-
-body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  font-size: 18px;
-  background-color:#eeeeee;
-  color:#00000A;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  line-height: 30px;
-  margin: 0 auto;
-  width: 70%;
-  font-weight: 400;
-  position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-/*Projects - introduction*/
-.container-intro {
-  display: block;
-  position: relative;
-  text-align: left;
-  background-color: #eeeeee;
-  border-bottom: 1px;
-  font color: #00000A;
-  font-size: 18px;
-  font-weight: 400px;
-  line-height: 30px;
-}
-
-.clouddocs-mainapp-image {
-  display: flex;
-  position: relative;
-  margin-left: 0 auto;
-  width: 100%;
-  height:500px;
-  padding: 5px, 5px, 5px, 5px;
-}
-
-/*Viewprototype button style*/
-.button-middle {
-  display: flex; /* or inline-flex */
-  font-size: 18px;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  background-color: #19227C;
-  color: #FFFFFF;
-  border-radius: 20px;
-  padding: 10px 10px 10px 10px;
-  text-decoration: bold;
-  position: relative;
-  height: auto;
-  }
-
-.section-divider {
-  display: flex;
-  background-color:#AC405D;
-  padding: 30px, 30px, 30px, 30px;
-}
-
-.problemsolution {
-  display: block;
-  position: relative;
-  max-width:600px;
-  background-color:#E1708A;
-  font-weight: 300;
-  color:#0B1C31;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  flex: 0 0 200px;
-  margin: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
-.w3-containerCS {
-  display: flex;
-  list-style-position: inside;
-  position: relative;
-  font-size: 14px;
-	background-color:#00004F;
-  font color: white;
-  padding: 10px, 10px, 10px, 10px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.casestudytools-container-fluid {
-  background-color:#524AAC;
-  color:white;
-  padding: 10px, 10px, 10px, 10px;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* roles list*/
-.roles-wrapper{
-  padding: 20px;
-  padding-bottom: 50px;
-}
-
-
-h1 {
-  position: relative;
-  font-size: 48px;
-  color: #0B1C31;
-  text-align: center;
-  padding-left: 20px;
-  line-height: 1.2;
-  line-height: 75%;
-  line-height: 2em;
-  line-height: normal;
-}
-
-h2 {
-  display: flex;
-  position: relative;
-  font-size: 36px;
-  color: #0B1C31;
-  text-align: center;
-  padding top: 20px;
-  padding-left: 40px;
-  line-height: 1.2; /* within paragraph */
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-h3 {
-  display: flex;
-  font-size: 24px;
-  line-height: 40px;
-  color: #0B1C31;
-  text-align: left;
-  padding-left: 40px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: normal;
-}
-
-h4 {
-    display: flex;
-    text-align: center;
-    font-size: 20px;
-    line-height: 20px;
-    color: #0B1C31;
-    margin-top: 1.2em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-p {
-  display: block;
-  position: relative;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-style: normal;
-  padding-right: 20px;
-  padding-left: 40px;
-  padding-bottom: 20px;
-  line-height: 1.5; /* within paragraph */
-  text-align: 'left';
-  font-weight: 300;
-  line-height: 20px;
-  font-weight: 500px;
-  margin-bottom: 20px; /* between paragraphs */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container-fluid-footer {
-    display: flex;
-    text-decoration: center;
-    color: #00000A;
-    background-color:#E1708A;
-    padding: 5% 5% 10% 5%;
-    }
-
-.p-copyright{
-      display: block;
-      position: relative;
-      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-      font-style: normal;
-      padding-right: 20px;
-      padding-left: 40px;
-      padding-bottom: 20px;
-      line-height: 1.5; /* within paragraph */
-      line-height: 20px;
-      font-weight: 500px;
-      margin-bottom: 20px;
-      vertical-align: baseline;
-}
-
-.connect-button {
-  display: flex;
-  font-size: 18px;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  background-color: #19227C;
-  color: #FFFFFF;
-  border-radius: 20px;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  text-decoration: bold;
-  position: relative;
-  margin: 0 auto;
-  width:100px;
-}
-
-.fa {
-    position: flex;
-    position: relative;
-    padding: 2% 5% 10% 5%;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: #00000A;
-}
-
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
   }
