@@ -6,12 +6,27 @@
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 70%;
+    max-width: 70%;
+  }
 }
 
 html {
   font-size: 18px;
-
 }
 
 /* global styles */
@@ -27,6 +42,7 @@ body {
 }
 
 h1 {
+ display: block;
   position: relative;
   font-size: 48px;
   font-weight: 700;
@@ -72,11 +88,10 @@ h3 {
 
 h4 {
     display: flex;
-
     text-align: left;
     position: relative;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     color: #0B1C31;
     margin-top: 1.2em;
@@ -93,7 +108,7 @@ p {
   padding: 2% 2% 2% 2%;
   line-height: 1.5; /* within paragraph */
   text-align: left;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 20px;
   font-weight: 400px;
   margin-bottom: 20px; /* between paragraphs */
@@ -176,13 +191,11 @@ p {
 .clouddocs-app-image {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width:400px;
   height:400px;
-  padding-bottom:40px;
+  padding-bottom:5%;
 }
 
 /*clouddocs-logo image properties*/
@@ -192,8 +205,7 @@ p {
   margin-right: auto;
   width: 120px;
   height: 80px;
-  padding left: 80%;
-  padding-bottom: 40px;
+  padding-bottom: 5%;
 }
 
 /*clouddocs-intro properties*/
@@ -244,20 +256,9 @@ p {
   border-bottom: 1px;
   font color: #00000A;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 30px;
-  height: 10rem;
-  padding: 5% 5% 5% 5%;
-}
-
-.clouddocs-mainapp-image {
-  display: block;
-  align-items: center;
-  position: relative;
-  margin-left: 0 auto;
-  width: 50%;
-  height: 600px;
-  padding: 20%, 5%, 20%, 5%;
+  padding: 5%, 5%, 5%, 5%;
 }
 
 /*Viewprototype button style*/
@@ -284,6 +285,7 @@ p {
   clear: both;
 }
 
+/*problem-solution*/
 .problemsolution {
   display: block;
   position: relative;
@@ -299,101 +301,87 @@ p {
   margin-right: auto;
   }
 
-.w3-containerCS {
-  display: flex;
-  position: relative;
-  font-size: 18px;
-	background-color: #00004F;
-  font color: white;
-  padding: 10%, 10%, 10%, 10%;
-  height: auto;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/*CS tools & list*/
 .cstools-box {
   display: block;
   background-color: #00004F;
   color: white;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  flex: 0 0 400px;
-  margin: 40px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* CS tools list*/
-.CS-tools-wrapper{
-  display: inline-block;
+.clouddocs-mainapp-image {
+  display: inline-flex;
+  position: relative;
+  margin-left: 0 auto;
+  height: 600px;
+  padding-bottom: 5%;
+}
+
+.CS-tools-column {
+  display: block;
   background-color:#524AAC;
   color: #FFFFFF;
-  max-width: 600px;
-  padding: 30%, 20%, 30%, 20%;
-  }
+  max-width: 400px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 
-.CS-tools-wrapper dl, li, h3 {
-    display: inline;
-    text-align: center;
-    padding: 10% 5% 10% 5%;
-    }
+.CS-tools-column h3 {
+  display: inline;
+  text-align: center;
+  padding: 20% 10% 20% 10%;
+  }
 
 /* researchdiscovery */
-.RandD h1{
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-
- .RandD-container-fluid {
-  display: block;
-  background-color:#524AAC;
-  color: #FFFFFF;
-  text-align: left;
-  max-width: 600px;
-  padding: 20%, 5%, 10%, 0%;
-  position: relative;
-  vertical-align: inherit;
-}
-
 .keyfindings-image {
-  display: flex;
-  align-items: center;
-
-  margin-left: 0 auto;
-  width: inherit;
-  height: 400px;
-  padding: 10%, 10%, 30%, 10%;
-}
-.keyfindings-container-fluid, ol {
-  display: inline-block;
-  background-color: #524AAC;
-  color: #FFFFFF;
-  text-align: left;
-  max-width: 600px;
-  padding: 10%, 20%, 10%, 10%;
+  display: inline-grid;
+  float: center;
   position: relative;
-  width: 70%;
-  margin: auto;
-  vertical-align: inherit;
+  margin: 50px;
+  height: 400px;
   }
 
-/* Competitive Analysis*/
-.CA-container-fluid{
-  display: block;
-  align-items: center;
+.column1{
+  display: inline-grid;
+  float: center;
+  background-color: #524AAC;
+  color: #FFFFFF;
   position: relative;
+  width: 30%;
+  margin: 20px;
+  padding: 2%;
+}
+
+.app-list {
+  display: shortlist;
+  margin: 5px;
+  text-align: left;
+}
+
+/*competitive analysis*/
+.ca-container-fluid {
+  display: block;
+  width: 70%;
+  margin: 50px;
+  padding: 1%;
+}
+
+/* Competitive Analysis*/
+.ca-container-fluid{
+  display: block;
+  text-align: center;
+  position: relative;
+  height: inherit;
+  margin: 40px;
+  padding-bottom: 5%;
 }
 
 .g-d-m-logoimg {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-left: 0 auto;
   width: 134px;
   height: 109px
-  padding: 10%, 5%, 10%, 5%;
 }
 
 .column {
@@ -402,86 +390,289 @@ p {
   padding: 5px;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-/*footer properties*/
-.container-fluid-footer {
+/* Content Strategy*/
+.cs-container-fluid{
   display: block;
-  color: #00000A;
-  background-color:#E1708A;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  padding: 2% 2% 2% 2%;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
+  position: relative;
+  max-width: 600px;
+  margin: 40px;
+}
+
+/*Personas*/
+.Persona-box {
+  display: block;
+  background-color: #00004F;
+  color: white;
+  margin: 40px;
+}
+
+.persona-img {
+  display: inline-block;
+  padding: 30px;
+  position: relative;
   margin-left: auto;
-  }
-
-.copyright{
-   bottom: 0;
-   left: 0;
-   text-align: center;
-   width: 100%;
-   margin: 30px 0 0;
-   position: relative;
-   line-height: 20px;
-   font-weight: 400px;
+  margin-right: auto;
 }
 
-.connect-button {
-  display: flex;
+/*user flows -sitemap*/
+.userflows-container-fluid {
+  display: inline-block;
+  text-align: left;
   position: relative;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #AC405D;
+  height: inherit;
+  margin: 40px;
+}
+
+.userflow-img {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+  width: 50%;
+}
+
+/*user stories*/
+.US-column{
+  display: list-item;
+  background-color: #524AAC;
   color: #FFFFFF;
-  border-radius: 20px;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  margin: 0 auto;
-  width:100px;
-}
-
-.footer-social-icons {
-  margin-bottom: 5%;
   position: relative;
-  font-size: 30px;
-  color: #00000A;
-  margin: 0 auto;
-  width: 350px;
+  width: 25%;
+  margin: auto;
+  padding-bottom: 1%;
+  }
+
+.US-column li {
+  display: shotlist;
+  width: 70%;
+  line-height: inherit;
+  margin: 5px;
+  text-align: left;
 }
 
-.container-fluid-footer .footer-social-icons .social-icons {
-  list-style-type: none;
-  width: 70%;
-  margin: 0 auto;
+/*brand - user testing section*/
+.Brand-container-fluid, .usertest-container-fluid {
+  display: block;
+  position: relative;
+  max-width: 600px;
+  margin: 20px;
+  padding-bottom: 2%;
+}
+
+.brand-img {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  margin: 20px;
+}
+
+.type-container-fluid {
+  display: inline-block;
+  position: relative;
+  height: inherit;
+  margin: 80px;
+}
+
+
+/*h1 properties*/
+.randd-h1, .brand-h1, .prototype-h1, .conclusion-h1 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  margin: 1em 0 0.5em 0;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 42px;
+}
+
+/*prototype*/
+.prototype-container-fluid {
+  display: block;
+  text-align: center;
+  background-color: #00004F;
+  color: #FFFFFF;
+  position: relative;
+  height: inherit;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.sketches-img {
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  padding-left: 2%;
+  padding-bottom: 3%;
+}
+
+/* Preference Test*/
+.usertest-container-fluid h2 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-size: 36px;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	line-height: 40px;
+  display: block;
+  text-align: left;
+  text-transform: full-width;
+  position: relative;
+}
+
+.usertest-container-fluid h3 {
+	margin: 1em 0 0.5em 0;
+	font-size: 24px;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	line-height: 40px;
+	font-weight: 500;
+}
+
+.test1-img .test2-img {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  padding: 10%;
+  position: relative;
+  margin: 40px;
+}
+
+/*Hi-fi Prototype*/
+.hi-prototype-container-fluid {
+  display: block;
+  background-color: #00004F;
+  color: #FFFFFF;
+  position: relative;
+  margin: 20px;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+  padding: 2% 2% 5% 2%;
+}
+
+.hifi-img {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*finishing touches*/
+.finishing-touches-container-fluid {
+  display: inline-block;
+  background-color: #00004F;
+  color: #FFFFFF;
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.ft-img {
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  position: relative;
+  margin: 20px;
+}
+
+/*conclusion*/
+.conclusion-container-fluid {
+  display: inline-block;
+  background-color: #00004F;
+  color: #FFFFFF;
+  position: relative;
+  margin: 50px;
+  padding-bottom: 5%;
+}
+
+/*finishing-touches list, conclusion list*/
+.column-li{
+  display: inline-block;
+  flex: 33.33%;
+  list-style-position: inherit;
+  text-align: left;
+}
+
+.conclusion-img {
+  display: inline-block;
+  float: center;
+  width: 30%;
+  padding: 5px;
+  position: relative;
   height: auto;
-  }
-
-.container-fluid-footer .footer-social-icons .social-icons li {
-    display: inline;   /* Ensures that list items are in the same line. Else, they would be vertically aligned*/
-    padding: 10px 5px;
-  }
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+  margin: auto;
 }
 
 /*---- about-page list styles----*/
+.profilepic-img {
+  display: block;
+  float: center;
+  width: 30%;
+  padding: 5px;
+  position: relative;
+  height: auto;
+  margin: 40px;
+}
+
+.bio {
+  display: block;
+  position: relative;
+  margin: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.bio h2 {
+  
+
+
+
+}
+
+
+
+
+.bio p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .experiencelist-container {
+  display: inline-block;
+  flex: 33.33%;
+  list-style-position: inherit;
+  text-align: left;
   position: relative;
   grid-column: span 1;
-  display: grid;
-  font size: 1em;
+  font size: 18px;
   grid: subgrid;
-  text-align: left;
   line-height: 30px;
   width: 30%;
   background-color: #00004F;
@@ -491,6 +682,7 @@ p {
   box-sizing: border-box;
   color: white;
   height: auto;
+  margin: 20px;
 }
 
 .projectlist-container {
@@ -532,5 +724,83 @@ p {
   list-style-image: url("Images\icons8-css3-48.png");
   list-style-image: url("Images\icons8-javascript-48.png");
   list-style-image: url("Images\icons8-wordpress-48.png");
-
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer properties*/
+.container-fluid-footer {
+  display: block;
+  color: #00000A;
+  background-color: #E1708A;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  padding: 2% 2% 2% 2%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+.copyright{
+   bottom: 0;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   margin: 30px 0 0;
+   position: relative;
+   line-height: 20px;
+   font-weight: 400px;
+}
+
+.connect-button {
+  display: flex;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #AC405D;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.footer-social-icons {
+  margin-bottom: 5%;
+  position: relative;
+  font-size: 30px;
+  color: #00000A;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.container-fluid-footer .footer-social-icons .social-icons {
+  list-style-type: none;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  }
+
+.container-fluid-footer .footer-social-icons .social-icons li {
+    display: inline;   /* Ensures that list items are in the same line. Else, they would be vertically aligned*/
+    padding: 10px 5px;
+  }
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
