@@ -1,7 +1,5 @@
 
 @import url("https://use.fontawesome.com/37471687aa.js");
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-@import "normalize";
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -11,20 +9,24 @@
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (min-width: 900px) {
-.container {
+.intro-container-fluid {
   width: 100%;
 }
 
-  .column {
+  .column, .column1 {
     flex: 50%;
     max-width: 50%;
   }
+
+  article {
+      padding: 1rem 3rem;
+    }
 }
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (min-width: 600px) {
-.container {
+.intro-container-fluid {
   margin:0 auto;
   width: 70%;
 }
@@ -36,8 +38,19 @@
       float: none;
       display: block;
       text-align: left;
-    }
+}
 
+nav ul li {
+       display: block;
+       margin-bottom: .5em;
+       /*...etc...  */
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   /* your CSS here */
+   }
+}
 
 
 html {
@@ -130,7 +143,7 @@ p {
 .navlist a {
   color: #00000A;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font weight: 500;
+  font-weight: 500;
   line-height: 40px;
   margin: 0 auto;
   padding: 2% 2% 2% 2%;
@@ -184,8 +197,8 @@ p {
 /*clouddocs-logo image properties*/
 .clouddocs-logo-image {
   display: flex;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 120px;
   height: 80px;
   padding-bottom: 5%;
@@ -247,7 +260,7 @@ p {
 
 /*problem-solution*/
 .problemsolution {
-  max-width: 50%;
+  max-width: 60%;
   text-align: left;
   background-color: #00004F;
   color: white;
@@ -259,9 +272,9 @@ p {
 .cstools-box {
   background-color: #00004F;
   color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  width: 50%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -272,6 +285,7 @@ p {
 }
 
 .CS-tools-column {
+  list-style: none;
   background-color:#524AAC;
   color: #FFFFFF;
   max-width: 40%;
@@ -287,6 +301,7 @@ p {
   column-rule: 2px;
   text-align: left;
   margin: 0 auto;
+
 }
 
 .CS-tools-column h3 {
@@ -355,7 +370,7 @@ p {
   background-color: #00004F;
   color: white;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 .persona-img {
@@ -365,7 +380,7 @@ p {
 
 /*user flows -sitemap*/
 .userflows-container-fluid {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -376,7 +391,7 @@ p {
 }
 
 /*user stories*/
-.US-column{
+.US-column {
   background-color: #524AAC;
   color: #FFFFFF;
   width: 30%;
@@ -403,14 +418,14 @@ p {
 }
 
 .type-container-fluid {
-  padding-top: 5%;
+  padding-top: 2%;
   margin: 0 auto;
 }
 
 /*h1 properties*/
 .randd-h1, .brand-h1, .prototype-h1, .conclusion-h1 {
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   margin: 0 auto;
 	font-weight: 700;
@@ -423,8 +438,8 @@ p {
   background-color: #00004F;
   color: #FFFFFF;
   margin: 0 auto;
-  padding-bottom: 2%;
-  width: 80%;
+  padding: 2%;
+  width: 70%;
 }
 
 .sketches-img {
@@ -440,6 +455,7 @@ p {
 .usertest-container-fluid h2 {
 	font-weight: 600;
 	font-size: 36px;
+  padding: 2%;
 }
 
 .usertest-container-fluid h3 {
@@ -479,8 +495,8 @@ p {
   display: inline-block;
   background-color: #00004F;
   color: #FFFFFF;
-  max-width: 50%;
-  padding-top: 3%;
+  max-width: 100%;
+  padding: 3%;
   padding-bottom: 3%;
 }
 
@@ -494,7 +510,7 @@ p {
   color: #FFFFFF;
   margin: 0 auto;
   padding: 2%;
-  width: 60%;
+  width: 68%;
 }
 
 /*finishing-touches list, conclusion list*/
