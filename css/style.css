@@ -18,19 +18,34 @@
     max-width: 50%;
   }
 
-  article {
-      padding: 1rem 3rem;
+  section {
+      display: flex;
     }
 }
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (min-width: 600px) {
+
 .intro-container-fluid {
   margin:0 auto;
   width: 70%;
-}
+  }
 
+.navlist a {
+    float: none;
+    width: 100%;
+  }
+
+.column {
+    width: 100%;
+  }
+
+section {
+    padding: 1rem 3rem;
+  }
+
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (min-width: 500px) {
@@ -47,9 +62,10 @@ nav ul li {
    }
 }
 
-@media only screen and (max-width: 480px) {
-   /* your CSS here */
-   }
+@media screen and (orientation: landscape) {
+
+    #nav { float: left }
+
 }
 
 
@@ -149,12 +165,32 @@ p {
   padding: 2% 2% 2% 2%;
 }
 
+/* Style the hamburger menu */
+.navlist a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
 /*hero image properties*/
-.about-image {
+.bg {
+
+
+}
+
+
+
+
+.hero-image {
   display: inline-block;
-  align-items: center;
-  margin: 10px;
+  margin: 0 auto;
+  height:auto;
   width: 100%;
+  background: url("images/carli-jeen-365-unsplash.jpg") no-repeat center;
+  position: relative;
 }
 
 /*h1 heading style - homepage*/
@@ -279,17 +315,18 @@ p {
 }
 
 .clouddocs-mainapp-image {
-  height: 5%;
+  height: auto;
   padding-bottom: 5%;
-  width: 80%;
+  max-width: 100%;
 }
 
 .CS-tools-column {
   list-style: none;
   background-color:#524AAC;
   color: #FFFFFF;
-  max-width: 40%;
-  padding: 1%  1%  1%  1%;
+  font-size: 16px;
+  
+  padding: 2%  1%  1%  2%;
   -moz-columns: 5em;
   -webkit-columns: 5em;
   columns: 5em;
@@ -301,7 +338,6 @@ p {
   column-rule: 2px;
   text-align: left;
   margin: 0 auto;
-
 }
 
 .CS-tools-column h3 {
@@ -313,7 +349,8 @@ p {
 /* researchdiscovery */
 .keyfindings-image {
   margin: 30px;
-  height: 20%;
+  max-width: 100%;
+  height: auto;
 }
 
 .column1{
@@ -360,7 +397,6 @@ p {
 /* Content Strategy*/
 .cs-container-fluid{
   width: 60%;
-
   padding: 1%;
   margin: 0 auto;
 }
@@ -376,6 +412,8 @@ p {
 .persona-img {
   padding: 30px;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /*user flows -sitemap*/
@@ -387,7 +425,8 @@ p {
 .userflow-img {
   margin: 20px;
   padding-bottom: 5%;
-  width: 50%;
+  width: 80%;
+  height: auto;
 }
 
 /*user stories*/
@@ -415,6 +454,8 @@ p {
 
 .brand-img {
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .type-container-fluid {
@@ -445,7 +486,8 @@ p {
 .sketches-img {
   display: inline-block;
   position: relative;
-  max-width: 50%;
+  height: auto;
+  max-width: 100%;
   padding-left: 2%;
   padding-bottom: 3%;
   margin: 0 auto;
@@ -467,7 +509,8 @@ p {
 
 .test1, .test2 {
   display: inline-block;
-  max-width: 50%;
+  height: auto;
+  max-width: 100%;
   padding-top:3%;
   padding-left:3%;
   padding-bottom: 5%;
@@ -485,7 +528,8 @@ p {
 }
 
 .hifi-img {
-  max-width: 50%;
+  height: auto;
+  max-width: 100%;
   padding-top:2%;
   padding-left:2%;
 }
@@ -495,6 +539,7 @@ p {
   display: inline-block;
   background-color: #00004F;
   color: #FFFFFF;
+  height: auto;
   max-width: 100%;
   padding: 3%;
   padding-bottom: 3%;
@@ -502,6 +547,8 @@ p {
 
 .ft-img {
   padding: 2%;
+  height: auto;
+  max-width: 100%;
 }
 
 /*conclusion*/
@@ -510,7 +557,7 @@ p {
   color: #FFFFFF;
   margin: 0 auto;
   padding: 2%;
-  width: 68%;
+  width: 65%;
 }
 
 /*finishing-touches list, conclusion list*/
@@ -522,7 +569,8 @@ p {
 
 .conclusion-img {
   padding: 3%;
-  width: 80%;
+  height: auto;
+  max-width: 100%;
 }
 
 /*main text property*/
@@ -532,7 +580,8 @@ p {
 
 /*---- about-page list styles----*/
 .profilepic-img {
-  width: 30%;
+  height: auto;
+  max-width: 100%;
   padding: 5px;
   margin: 40px;
 }
@@ -557,20 +606,20 @@ p {
 }
 
 .project-skills-row {
-  padding: 1% 1% 3% 1%;
+  padding: 2% 1% 2% 1%;
   background-color: #00004F;
   color: white;
-  -moz-columns: 5em 3;
-  -webkit-columns: 5em 3;
-  columns: 4em 3;
-  -webkit-column-gap: 1.5em;
-  -moz-column-gap: 1.5em;
-  column-gap: 1.5em;
+  -moz-columns: 1em 3;
+  -webkit-columns: 1em 3;
+  columns: 1em 3;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
   -webkit-column-rule: 2px;
   -moz-column-rule: 2px;
   column-rule: 2px solid #ddd;
   text-align: left;
-  margin: 50px;
+  margin: 30px;
 }
 
 .experiencelist-column1, .projectlist-column1, .skillslist-column1 {
@@ -596,6 +645,7 @@ p {
   padding-left: 40%;
   font-weight: normal;
   width: 100%;
+
 }
 
 .connect-button {
