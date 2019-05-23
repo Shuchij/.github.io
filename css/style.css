@@ -10,12 +10,12 @@
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (min-width: 900px) {
 .intro-container-fluid {
-  width: 100%;
+  min-width: 50%;
 }
 
   .column, .column1 {
-    flex: 50%;
-    max-width: 50%;
+    flex: 70%;
+    min-width: 70%;
   }
 
   section {
@@ -38,7 +38,7 @@
   }
 
 .column {
-    width: 100%;
+    width: 70%;
   }
 
 section {
@@ -48,27 +48,28 @@ section {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (min-width: 500px) {
+@media screen (max-width: 400px) {
   .header a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
+      position: relative;
 }
 
-nav ul li {
-       display: block;
-       margin-bottom: .5em;
+/* nav ul li { */
+       /* display: block; */
+       /* margin-bottom: .5em; */
        /*...etc...  */
    }
-}
-
-@media screen and (orientation: landscape) {
-    #nav { float: left }
+      .copyright{
+       width: 60%; /*min-width: 200px; */
+   }
 }
 
 
 html {
   font-size: 18px;
+  overflow-y: hidden;
 }
 
 /* global styles */
@@ -146,6 +147,12 @@ p {
 img { max-width: 100%; height: auto; }
 
 /*custom  styles */
+.topnav {
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+
 .navlist {
   list-style-type: none;
   width: 70%;
@@ -653,11 +660,14 @@ img { max-width: 100%; height: auto; }
 }
 
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  padding-left: 43%;
   font-size: 14px;
   font-weight: normal;
-  width: 100%;
+  max-width: 900px;
+  min-width: 60%;
 }
 
 .connect-button {
